@@ -85,7 +85,7 @@ Future<TranslateResult> translate(
   final primaryTranslation = summaryJson[0];
   final source = summaryJson[1];
 
-  final partsJson = (jsonData as List)[1] as List;
+  final partsJson = (jsonData)[1] as List?;
 
   List<Part> parts;
 
@@ -93,19 +93,17 @@ Future<TranslateResult> translate(
     parts = [];
   } else {
     parts = partsJson.map((e) {
-      final name = (e as List)[0] as String ?? '';
-      final translationsJson = (e as List)[1] as List;
-      final translationDetailsJson = (e as List)[2] as List;
+      final name = (e as List)[0] as String? ?? '';
+      final translationsJson = (e)[1] as List;
+      final translationDetailsJson = (e)[2] as List;
 
-      assert(translationsJson != null);
-      assert(translationDetailsJson != null);
       assert(translationsJson.length == translationDetailsJson.length);
 
       final translations = translationDetailsJson.mapIndexed((i, e) {
         final translationDetailsJson = e as List;
         return Translation(
           content: translationsJson[i] as String,
-          frequency: (translationDetailsJson.elementAtOrNull(3) as double) ?? 0,
+          frequency: (translationDetailsJson.elementAtOrNull(3) as double?) ?? 0,
         );
       }).toList();
 

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'data.dart';
 
@@ -9,13 +9,17 @@ part of 'data.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$TranslateResultTearOff {
   const _$TranslateResultTearOff();
 
-// ignore: unused_element
   _TranslateResult call(
-      {String source, String primaryTranslation, List<Part> parts}) {
+      {required String source,
+      required String primaryTranslation,
+      required List<Part> parts}) {
     return _TranslateResult(
       source: source,
       primaryTranslation: primaryTranslation,
@@ -25,17 +29,17 @@ class _$TranslateResultTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $TranslateResult = _$TranslateResultTearOff();
 
 /// @nodoc
 mixin _$TranslateResult {
-  String get source;
-  String get primaryTranslation;
-  List<Part> get parts;
+  String get source => throw _privateConstructorUsedError;
+  String get primaryTranslation => throw _privateConstructorUsedError;
+  List<Part> get parts => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $TranslateResultCopyWith<TranslateResult> get copyWith;
+  $TranslateResultCopyWith<TranslateResult> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -57,16 +61,23 @@ class _$TranslateResultCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object source = freezed,
-    Object primaryTranslation = freezed,
-    Object parts = freezed,
+    Object? source = freezed,
+    Object? primaryTranslation = freezed,
+    Object? parts = freezed,
   }) {
     return _then(_value.copyWith(
-      source: source == freezed ? _value.source : source as String,
+      source: source == freezed
+          ? _value.source
+          : source // ignore: cast_nullable_to_non_nullable
+              as String,
       primaryTranslation: primaryTranslation == freezed
           ? _value.primaryTranslation
-          : primaryTranslation as String,
-      parts: parts == freezed ? _value.parts : parts as List<Part>,
+          : primaryTranslation // ignore: cast_nullable_to_non_nullable
+              as String,
+      parts: parts == freezed
+          ? _value.parts
+          : parts // ignore: cast_nullable_to_non_nullable
+              as List<Part>,
     ));
   }
 }
@@ -94,23 +105,33 @@ class __$TranslateResultCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object source = freezed,
-    Object primaryTranslation = freezed,
-    Object parts = freezed,
+    Object? source = freezed,
+    Object? primaryTranslation = freezed,
+    Object? parts = freezed,
   }) {
     return _then(_TranslateResult(
-      source: source == freezed ? _value.source : source as String,
+      source: source == freezed
+          ? _value.source
+          : source // ignore: cast_nullable_to_non_nullable
+              as String,
       primaryTranslation: primaryTranslation == freezed
           ? _value.primaryTranslation
-          : primaryTranslation as String,
-      parts: parts == freezed ? _value.parts : parts as List<Part>,
+          : primaryTranslation // ignore: cast_nullable_to_non_nullable
+              as String,
+      parts: parts == freezed
+          ? _value.parts
+          : parts // ignore: cast_nullable_to_non_nullable
+              as List<Part>,
     ));
   }
 }
 
 /// @nodoc
 class _$_TranslateResult implements _TranslateResult {
-  _$_TranslateResult({this.source, this.primaryTranslation, this.parts});
+  _$_TranslateResult(
+      {required this.source,
+      required this.primaryTranslation,
+      required this.parts});
 
   @override
   final String source;
@@ -152,27 +173,27 @@ class _$_TranslateResult implements _TranslateResult {
 
 abstract class _TranslateResult implements TranslateResult {
   factory _TranslateResult(
-      {String source,
-      String primaryTranslation,
-      List<Part> parts}) = _$_TranslateResult;
+      {required String source,
+      required String primaryTranslation,
+      required List<Part> parts}) = _$_TranslateResult;
 
   @override
-  String get source;
+  String get source => throw _privateConstructorUsedError;
   @override
-  String get primaryTranslation;
+  String get primaryTranslation => throw _privateConstructorUsedError;
   @override
-  List<Part> get parts;
+  List<Part> get parts => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TranslateResultCopyWith<_TranslateResult> get copyWith;
+  _$TranslateResultCopyWith<_TranslateResult> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 class _$PartTearOff {
   const _$PartTearOff();
 
-// ignore: unused_element
-  _Part call({String name, List<Translation> translations}) {
+  _Part call({required String name, required List<Translation> translations}) {
     return _Part(
       name: name,
       translations: translations,
@@ -181,16 +202,15 @@ class _$PartTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Part = _$PartTearOff();
 
 /// @nodoc
 mixin _$Part {
-  String get name;
-  List<Translation> get translations;
+  String get name => throw _privateConstructorUsedError;
+  List<Translation> get translations => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $PartCopyWith<Part> get copyWith;
+  $PartCopyWith<Part> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -210,14 +230,18 @@ class _$PartCopyWithImpl<$Res> implements $PartCopyWith<$Res> {
 
   @override
   $Res call({
-    Object name = freezed,
-    Object translations = freezed,
+    Object? name = freezed,
+    Object? translations = freezed,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed ? _value.name : name as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
       translations: translations == freezed
           ? _value.translations
-          : translations as List<Translation>,
+          : translations // ignore: cast_nullable_to_non_nullable
+              as List<Translation>,
     ));
   }
 }
@@ -241,21 +265,25 @@ class __$PartCopyWithImpl<$Res> extends _$PartCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object name = freezed,
-    Object translations = freezed,
+    Object? name = freezed,
+    Object? translations = freezed,
   }) {
     return _then(_Part(
-      name: name == freezed ? _value.name : name as String,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
       translations: translations == freezed
           ? _value.translations
-          : translations as List<Translation>,
+          : translations // ignore: cast_nullable_to_non_nullable
+              as List<Translation>,
     ));
   }
 }
 
 /// @nodoc
 class _$_Part implements _Part {
-  _$_Part({this.name, this.translations});
+  _$_Part({required this.name, required this.translations});
 
   @override
   final String name;
@@ -291,23 +319,24 @@ class _$_Part implements _Part {
 }
 
 abstract class _Part implements Part {
-  factory _Part({String name, List<Translation> translations}) = _$_Part;
+  factory _Part(
+      {required String name,
+      required List<Translation> translations}) = _$_Part;
 
   @override
-  String get name;
+  String get name => throw _privateConstructorUsedError;
   @override
-  List<Translation> get translations;
+  List<Translation> get translations => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$PartCopyWith<_Part> get copyWith;
+  _$PartCopyWith<_Part> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 class _$TranslationTearOff {
   const _$TranslationTearOff();
 
-// ignore: unused_element
-  _Translation call({String content, double frequency}) {
+  _Translation call({required String content, required double frequency}) {
     return _Translation(
       content: content,
       frequency: frequency,
@@ -316,16 +345,16 @@ class _$TranslationTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $Translation = _$TranslationTearOff();
 
 /// @nodoc
 mixin _$Translation {
-  String get content;
-  double get frequency;
+  String get content => throw _privateConstructorUsedError;
+  double get frequency => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $TranslationCopyWith<Translation> get copyWith;
+  $TranslationCopyWith<Translation> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -346,12 +375,18 @@ class _$TranslationCopyWithImpl<$Res> implements $TranslationCopyWith<$Res> {
 
   @override
   $Res call({
-    Object content = freezed,
-    Object frequency = freezed,
+    Object? content = freezed,
+    Object? frequency = freezed,
   }) {
     return _then(_value.copyWith(
-      content: content == freezed ? _value.content : content as String,
-      frequency: frequency == freezed ? _value.frequency : frequency as double,
+      content: content == freezed
+          ? _value.content
+          : content // ignore: cast_nullable_to_non_nullable
+              as String,
+      frequency: frequency == freezed
+          ? _value.frequency
+          : frequency // ignore: cast_nullable_to_non_nullable
+              as double,
     ));
   }
 }
@@ -378,19 +413,25 @@ class __$TranslationCopyWithImpl<$Res> extends _$TranslationCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object content = freezed,
-    Object frequency = freezed,
+    Object? content = freezed,
+    Object? frequency = freezed,
   }) {
     return _then(_Translation(
-      content: content == freezed ? _value.content : content as String,
-      frequency: frequency == freezed ? _value.frequency : frequency as double,
+      content: content == freezed
+          ? _value.content
+          : content // ignore: cast_nullable_to_non_nullable
+              as String,
+      frequency: frequency == freezed
+          ? _value.frequency
+          : frequency // ignore: cast_nullable_to_non_nullable
+              as double,
     ));
   }
 }
 
 /// @nodoc
 class _$_Translation implements _Translation {
-  _$_Translation({this.content, this.frequency});
+  _$_Translation({required this.content, required this.frequency});
 
   @override
   final String content;
@@ -427,13 +468,15 @@ class _$_Translation implements _Translation {
 }
 
 abstract class _Translation implements Translation {
-  factory _Translation({String content, double frequency}) = _$_Translation;
+  factory _Translation({required String content, required double frequency}) =
+      _$_Translation;
 
   @override
-  String get content;
+  String get content => throw _privateConstructorUsedError;
   @override
-  double get frequency;
+  double get frequency => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$TranslationCopyWith<_Translation> get copyWith;
+  _$TranslationCopyWith<_Translation> get copyWith =>
+      throw _privateConstructorUsedError;
 }

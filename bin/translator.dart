@@ -4,7 +4,7 @@ void main() async {
   final input = 'hello';
 
   final fastTranslateResult = await fastTranslate(input, from: 'en', to: 'zh-cn');
-  print('结果: ${fastTranslateResult}');
+  print('结果: $fastTranslateResult');
 
   final result = await translate(input, from: 'en', to: 'zh-cn');
 

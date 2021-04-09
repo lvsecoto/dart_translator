@@ -65,9 +65,8 @@ extension TokenGenerator on dynamic {
         a = '+' == b[c] ? (a + (d as int) & 4294967295) : a ^ d;
       }
       return a;
-    } on Error catch (e) {
-      print(e.toString());
-      return null;
+    } on Error {
+      rethrow;
     }
   }
 
