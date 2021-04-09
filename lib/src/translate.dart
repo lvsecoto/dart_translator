@@ -5,7 +5,7 @@ import 'token.dart';
 import 'package:http/http.dart' as http;
 import 'package:dartx/dartx.dart';
 
-const _baseUrl = 'translate.googleapis.com';
+const _baseUrl = 'translate.google.cn';
 const _path = '/translate_a/single';
 
 Future<String> fastTranslate(
