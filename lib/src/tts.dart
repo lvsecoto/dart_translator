@@ -11,7 +11,7 @@ const _path = 'translate_tts';
 Uri translateTTS(String sourceText, {
   String to = 'en',
 }) {
-  return Uri.parse('https://$_baseUrl$_path')
+  return Uri.parse('https://$_baseUrl/$_path')
       .resolveUri(Uri(
       queryParameters: {
         'client': 'gtx',
